@@ -1,0 +1,637 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #111;
+
+    color: #fff;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================
+   PÁGINA LOGIN
+========================= */
+
+
+.login-page {
+
+
+    min-height: 100vh;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    padding: 40px 20px;
+
+
+
+    background-image:
+
+
+        linear-gradient(
+
+            rgba(0,0,0,0.78),
+
+            rgba(0,0,0,0.88)
+
+        ),
+
+
+        url("./src/images/background-desktop.png");
+
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+}
+
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+
+.login-container {
+
+
+    width:100%;
+
+
+    max-width:500px;
+
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+
+.login-card {
+
+
+    padding:40px;
+
+
+    background-color:
+
+
+        rgba(24,24,24,0.96);
+
+
+
+    border:
+
+        1px solid
+
+        rgba(201,139,75,0.35);
+
+
+
+    border-radius:20px;
+
+
+
+    box-shadow:
+
+
+        0 20px 50px
+
+        rgba(0,0,0,0.45);
+
+
+}
+
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+
+.login-header {
+
+
+    text-align:center;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.logo {
+
+
+    display:inline-block;
+
+
+    margin-bottom:25px;
+
+
+    color:#fff;
+
+
+    font-size:1.6rem;
+
+
+    font-weight:bold;
+
+
+    letter-spacing:1px;
+
+
+}
+
+
+
+.login-subtitle {
+
+
+    margin-bottom:5px;
+
+
+    color:#c98b4b;
+
+
+    font-size:0.85rem;
+
+
+    font-weight:bold;
+
+
+    text-transform:uppercase;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+.login-header h1 {
+
+
+    margin-bottom:10px;
+
+
+    font-size:2.2rem;
+
+
+}
+
+
+
+.login-description {
+
+
+    color:#aaa;
+
+
+    font-size:0.95rem;
+
+
+}
+
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+
+.login-form {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:18px;
+
+
+}
+
+
+
+.form-group {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:7px;
+
+
+}
+
+
+
+.form-group label {
+
+
+    color:#ddd;
+
+
+    font-size:0.9rem;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+
+.form-group input {
+
+
+    width:100%;
+
+
+    padding:13px 15px;
+
+
+
+    border:
+
+        1px solid #444;
+
+
+
+    border-radius:10px;
+
+
+
+    outline:none;
+
+
+
+    background-color:#222;
+
+
+
+    color:#fff;
+
+
+
+    font-size:1rem;
+
+
+
+    transition:
+
+
+        border-color 0.3s,
+
+
+        box-shadow 0.3s;
+
+
+}
+
+
+
+.form-group input::placeholder {
+
+
+    color:#777;
+
+
+}
+
+
+
+.form-group input:focus {
+
+
+    border-color:#c98b4b;
+
+
+
+    box-shadow:
+
+
+        0 0 0 2px
+
+        rgba(201,139,75,0.15);
+
+
+}
+
+
+
+/* =========================
+   ERROS
+========================= */
+
+
+.mensagem-erro {
+
+
+    min-height:18px;
+
+
+    color:#e57373;
+
+
+    font-size:0.8rem;
+
+
+}
+
+
+
+/* =========================
+   MENSAGEM LOGIN
+========================= */
+
+
+.mensagem-login {
+
+
+    min-height:20px;
+
+
+    text-align:center;
+
+
+    font-size:0.9rem;
+
+
+}
+
+
+
+.mensagem-login.erro {
+
+
+    color:#e57373;
+
+
+}
+
+
+
+.mensagem-login.sucesso {
+
+
+    color:#81c784;
+
+
+}
+
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+
+.button {
+
+
+    width:100%;
+
+
+    padding:14px 20px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background-color:#c98b4b;
+
+
+    color:#fff;
+
+
+    font-size:1rem;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+
+    transition:
+
+
+        transform 0.3s,
+
+
+        background-color 0.3s;
+
+
+}
+
+
+
+.button:hover {
+
+
+    transform:translateY(-2px);
+
+
+    background-color:#a96d35;
+
+
+}
+
+
+
+.button:active {
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+/* =========================
+   RODAPÉ LOGIN
+========================= */
+
+
+.login-footer {
+
+
+    margin-top:25px;
+
+
+    padding-top:20px;
+
+
+    border-top:1px solid #333;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.login-footer p {
+
+
+    display:inline;
+
+
+    color:#888;
+
+
+    font-size:0.9rem;
+
+
+}
+
+
+
+.login-footer a {
+
+
+    margin-left:5px;
+
+
+    color:#c98b4b;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+
+@media(max-width:600px){
+
+
+    .login-page {
+
+
+        padding:25px 15px;
+
+
+
+        background-image:
+
+
+            linear-gradient(
+
+                rgba(0,0,0,0.78),
+
+                rgba(0,0,0,0.90)
+
+            ),
+
+
+
+            url("./src/images/background-mobile.png");
+
+
+    }
+
+
+
+    .login-card {
+
+
+        padding:30px 22px;
+
+
+        border-radius:16px;
+
+
+    }
+
+
+
+    .login-header h1 {
+
+
+        font-size:1.8rem;
+
+
+    }
+
+
+
+    .logo {
+
+
+        font-size:1.4rem;
+
+
+    }
+
+
+}

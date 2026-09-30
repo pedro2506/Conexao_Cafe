@@ -1,0 +1,721 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 6%;
+
+    background: rgba(17, 17, 17, 0.95);
+
+    border-bottom: 1px solid rgba(201, 139, 75, 0.4);
+
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c98b4b;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c98b4b;
+}
+
+.botao-sair {
+    border: 1px solid #c98b4b;
+
+    background: transparent;
+
+    color: #c98b4b;
+
+    padding: 7px 16px;
+
+    border-radius: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-sair:hover {
+    background: #c98b4b;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   SEÇÃO HOME
+   ========================================================= */
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8% 60px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("../images/background-desktop.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.home-conteudo {
+    max-width: 650px;
+}
+
+.home-conteudo h1 {
+    font-size: 4rem;
+    color: #c98b4b;
+    margin-bottom: 10px;
+}
+
+.home-conteudo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home-conteudo p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #c98b4b;
+    color: #111;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.secao {
+    padding: 80px 6%;
+}
+
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secao-titulo h2 {
+    font-size: 2.2rem;
+    color: #c98b4b;
+    margin-bottom: 10px;
+}
+
+.secao-titulo p {
+    color: #ccc;
+}
+
+
+/* =========================================================
+   CAFÉS
+   ========================================================= */
+
+.cafes-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CARD DOS CAFÉS
+   ========================================================= */
+
+.cafe-card {
+    overflow: hidden;
+
+    background-color: rgba(24, 24, 24, 0.96);
+
+    border: 1px solid rgba(201, 139, 75, 0.35);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.cafe-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c98b4b;
+
+    box-shadow:
+        0 10px 30px rgba(201, 139, 75, 0.15);
+}
+
+
+/* =========================================================
+   IMAGEM DOS CAFÉS
+   ========================================================= */
+
+.cafe-image {
+    width: 100%;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background-color: #222;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DOS CAFÉS
+   ========================================================= */
+
+.cafe-info {
+    padding: 20px;
+}
+
+.cafe-info h3 {
+    color: #c98b4b;
+
+    margin-bottom: 8px;
+}
+
+.cafe-info p {
+    color: #ccc;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 10px;
+}
+
+.cafe-price {
+    color: #fff;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PRODUTOS
+   ========================================================= */
+
+.produtos-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CARD DOS PRODUTOS
+   ========================================================= */
+
+.produto-card {
+    overflow: hidden;
+
+    background-color: rgba(24, 24, 24, 0.96);
+
+    border: 1px solid rgba(201, 139, 75, 0.35);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c98b4b;
+
+    box-shadow:
+        0 10px 30px rgba(201, 139, 75, 0.15);
+}
+
+
+/* =========================================================
+   IMAGEM DOS PRODUTOS
+   ========================================================= */
+
+.produto-image {
+    width: 100%;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background-color: #222;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DOS PRODUTOS
+   ========================================================= */
+
+.produto-info {
+    padding: 20px;
+}
+
+.produto-info h3 {
+    color: #c98b4b;
+
+    margin-bottom: 5px;
+}
+
+.produto-info p {
+    color: #ccc;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 12px;
+}
+
+.produto-price {
+    color: #fff;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   CARROSSEL
+   ========================================================= */
+
+.carrossel {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 0 10px;
+}
+
+.carrossel-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BOTÕES DO CARROSSEL
+   ========================================================= */
+
+.carrossel-button {
+    flex-shrink: 0;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #c98b4b;
+
+    color: #111;
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    z-index: 2;
+}
+
+.carrossel-button:hover {
+    transform: scale(1.08);
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   CARDS DENTRO DO CARROSSEL
+   ========================================================= */
+
+.carrossel-container .cafe-card {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.sobre {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.sobre-imagem img {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+}
+
+.sobre-conteudo h2 {
+    color: #c98b4b;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
+    color: #ccc;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   LOCALIZAÇÃO
+   ========================================================= */
+
+.localizacao {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #181818;
+}
+
+.localizacao h2 {
+    color: #c98b4b;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.localizacao p {
+    color: #ccc;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.rodape {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #0b0b0b;
+
+    border-top: 1px solid rgba(201, 139, 75, 0.3);
+
+    color: #aaa;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .home-conteudo h1 {
+        font-size: 3rem;
+    }
+
+    .home-conteudo h2 {
+        font-size: 1.6rem;
+    }
+
+    .carrossel-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagem {
+        order: 1;
+    }
+
+    .sobre-conteudo {
+        order: 2;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 15px 4%;
+    }
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 0.78rem;
+    }
+
+    .home {
+        min-height: 100vh;
+
+        padding: 150px 7% 60px;
+
+        background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url("../images/background-mobile.png");
+
+        background-position: center;
+    }
+
+    .home-conteudo {
+        text-align: center;
+    }
+
+    .home-conteudo h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-conteudo h2 {
+        font-size: 1.4rem;
+    }
+
+    .home-conteudo p {
+        font-size: 1rem;
+    }
+
+    .secao {
+        padding: 60px 5%;
+    }
+
+    .secao-titulo h2 {
+        font-size: 1.8rem;
+    }
+
+
+    /* -----------------------------------------
+       CARROSSEL NO CELULAR
+       ----------------------------------------- */
+
+    .carrossel {
+        gap: 8px;
+
+        padding: 0;
+    }
+
+    .carrossel-container {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .carrossel-button {
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 1.1rem;
+    }
+
+    .carrossel-container .cafe-card {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       IMAGENS DOS PRODUTOS NO CELULAR
+       ----------------------------------------- */
+
+    .produto-image {
+        height: 130px;
+    }
+
+
+    /* -----------------------------------------
+       IMAGENS DOS CAFÉS NO CELULAR
+       ----------------------------------------- */
+
+    .cafe-image {
+        height: 130px;
+    }
+
+
+    .sobre-conteudo h2 {
+        font-size: 1.8rem;
+    }
+}

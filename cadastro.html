@@ -1,0 +1,241 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Cadastro - Conexão Café."
+    >
+
+    <title>Cadastro | Conexão Café</title>
+
+    <link
+        rel="stylesheet"
+        href="./src/css/cadastro.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="cadastro-page">
+
+        <section class="cadastro-container">
+
+            <div class="cadastro-card">
+
+                <div class="cadastro-header">
+
+                    <a
+                        href="./index.html"
+                        class="logo"
+                    >
+                        Conexão Café
+                    </a>
+
+                    <p class="cadastro-subtitle">
+                        Faça seu cadastro
+                    </p>
+
+                    <h1>
+                        Crie sua conta
+                    </h1>
+
+                    <p class="cadastro-description">
+                        Cadastre-se para conhecer nosso
+                        cardápio e nossos produtos.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="form-cadastro"
+                    class="cadastro-form"
+                >
+
+                    <!-- NOME -->
+
+                    <div class="form-group">
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            autocomplete="name"
+                            required
+                        >
+
+                        <small
+                            id="erro-nome"
+                            class="mensagem-erro"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- E-MAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <small
+                            id="erro-email"
+                            class="mensagem-erro"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- TELEFONE -->
+
+                    <div class="form-group">
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(00) 00000-0000"
+                            autocomplete="tel"
+                            maxlength="15"
+                            required
+                        >
+
+                        <small
+                            id="erro-telefone"
+                            class="mensagem-erro"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- SENHA -->
+
+                    <div class="form-group">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="new-password"
+                            minlength="6"
+                            required
+                        >
+
+                        <small
+                            id="erro-senha"
+                            class="mensagem-erro"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- CONFIRMAR SENHA -->
+
+                    <div class="form-group">
+
+                        <label for="confirmar-senha">
+                            Confirmar senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmar-senha"
+                            name="confirmar-senha"
+                            placeholder="Digite a senha novamente"
+                            autocomplete="new-password"
+                            minlength="6"
+                            required
+                        >
+
+                        <small
+                            id="erro-confirmar-senha"
+                            class="mensagem-erro"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- MENSAGEM GERAL -->
+
+                    <p
+                        id="mensagem-cadastro"
+                        class="mensagem-cadastro"
+                    ></p>
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        class="button"
+                    >
+                        Criar cadastro
+                    </button>
+
+                </form>
+
+
+                <div class="cadastro-footer">
+
+                    <p>
+                        Já possui cadastro?
+                    </p>
+
+                    <a href="./home.html">
+                        Acessar cardápio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="./src/js/cadastro.js"
+    ></script>
+
+</body>
+
+</html>
+```

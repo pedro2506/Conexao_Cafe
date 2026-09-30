@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conexão Café - Cafés, sabores e bons momentos."
+    >
+
+    <title>Conexão Café</title>
+
+    <link
+        rel="stylesheet"
+        href="./src/css/styles.css"
+    >
+</head>
+
+<body>
+
+    
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a
+                href="#inicio"
+                class="logo"
+            >
+                Conexão Café
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#cafes">
+                    Cafés
+                </a>
+
+                <a href="#produtos">
+                    Produtos
+                </a>
+
+                <a href="#mais-vendidos">
+                    Mais vendidos
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <button id="btn-logout" class="botao-sair">
+        Sair
+    </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+      
+
+        <section
+            id="inicio"
+            class="home"
+        >
+
+            <div class="container home-container">
+
+                <div class="home-content">
+
+                    <p class="home-subtitle">
+                        Bem-vindo ao
+                    </p>
+
+                    <h1>
+                        Conexão Café
+                    </h1>
+
+                    <p class="home-text">
+                        Café que conecta pessoas,
+                        sabores e bons momentos.
+                    </p>
+
+                    <a
+                        href="#cafes"
+                        class="button"
+                    >
+                        Conheça nossos cafés
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section
+            id="cafes"
+            class="section cafes-section"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        Nosso cardápio
+                    </p>
+
+                    <h2>
+                        Cafés
+                    </h2>
+
+                    <p>
+                        Escolha seu café favorito
+                        e aproveite o momento.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="cafes-container"
+                    class="produtos-container"
+                >
+
+                    <p class="loading">
+                        Carregando cafés...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+   
+
+        <section
+            id="produtos"
+            class="section produtos-section"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        Para acompanhar
+                    </p>
+
+                    <h2>
+                        Nossos produtos
+                    </h2>
+
+                    <p>
+                        Delícias preparadas para
+                        acompanhar seu café.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="produtos-container"
+                    class="produtos-container"
+                >
+
+                    <!--
+                        Os produtos serão criados
+                        pelo JavaScript.
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+
+        <section
+            id="mais-vendidos"
+            class="section mais-vendidos-section"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        Preferidos dos clientes
+                    </p>
+
+                    <h2>
+                        Mais vendidos
+                    </h2>
+
+                    <p>
+                        Alguns dos sabores que
+                        fazem sucesso no Conexão Café.
+                    </p>
+
+                </div>
+
+
+                <div class="carrosel">
+
+                    <button
+                        id="btn-anterior"
+                        class="carrosel-button"
+                        aria-label="Produto anterior"
+                    >
+                        &#10094;
+                    </button>
+
+
+                    <div
+                        id="carrosel-container"
+                        class="carrosel-container"
+                    >
+                    </div>
+
+
+                    <button
+                        id="btn-proximo"
+                        class="carrosel-button"
+                        aria-label="Próximo produto"
+                    >
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+      
+
+        <section
+            id="sobre"
+            class="section sobre-section"
+        >
+
+            <div class="container sobre-container">
+
+                <div class="sobre-image">
+
+                    <img
+                        src="./src/images/conexao_cafe.png"
+                        alt="Conexão Café"
+                    >
+
+                </div>
+
+
+                <div class="sobre-content">
+
+                    <p class="section-subtitle">
+                        Sobre nós
+                    </p>
+
+                    <h2>
+                        Mais que um café,
+                        uma conexão.
+                    </h2>
+
+                    <p>
+                        O Conexão Café é um espaço
+                        pensado para quem aprecia um
+                        bom café e bons momentos.
+                    </p>
+
+                    <p>
+                        Nossa proposta é unir sabores,
+                        pessoas e experiências em um
+                        ambiente acolhedor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section class="localizacao">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        Venha nos visitar
+                    </p>
+
+                    <h2>
+                        Onde estamos
+                    </h2>
+
+                </div>
+
+
+                <div class="localizacao-card">
+
+                    <span class="localizacao-icon">
+                        📍
+                    </span>
+
+                    <h3>
+                        Conexão Café
+                    </h3>
+
+                    <p>
+                        Rua do Café, 100
+                    </p>
+
+                    <p>
+                        Centro - Sua cidade
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+ 
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Conexão Café.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    
+
+    <script
+        src="./src/js/script.js"
+    ></script>
+
+</body>
+
+</html>
